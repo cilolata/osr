@@ -1,0 +1,217 @@
+.article__description{
+    padding: 2% 10%;
+    background-color: #111;
+    background-size: cover;
+    
+}
+
+.article__description--heading{
+    margin-bottom: 3%;
+    color: #6F9BA8;
+    font-size: 1.2rem;
+}
+
+.article__description--paragraph{
+    letter-spacing: 1px;
+}
+
+/* section__sponsours*/
+
+.section__sponsours {
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+}
+
+.sponsours__container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1% 9%;
+}
+
+.section__sponsours--heading{
+    margin-top: 1%;
+    padding: 1% 10%;
+    font-size: 1.2rem;
+    font-weight: 300;    
+}
+
+.section__sponsours--heading::after{
+    display: block;
+    height: 1px;
+    margin-top: 5px;
+    width: auto;
+    background-color: #6F9BA8;
+    content: " ";
+    margin: 0 auto;
+
+}
+
+.sponsours__box{
+    width: 23%;
+    margin: 1%;
+    padding: 1% 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;    
+}
+
+.sponsours__box--a{
+    background-color: #fff;
+
+}
+
+.sponsours__box--img{
+    width: 60%;
+}
+
+/* section__speakers*/
+
+.section__speakers{
+    background-color: #111;
+    padding-bottom: 1%;
+}
+
+.section__speakers--heading{
+    padding: 2% 10% 0 10% ;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.section__speakers--heading::after{
+    display: block;
+    height: 1px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #6F9BA8;
+    content: " ";
+}
+
+
+.speakers__container{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    padding: 1% 10%;
+    margin-top: 2%;
+
+}
+
+.speaker__container--img{
+    width: 30%;
+    margin-right: 3%;   
+}
+
+.speaker__img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.speaker__profile{
+    width: 60%;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.speaker__profile--heading{
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+}
+
+.speaker__profile--paragraph{
+    margin-bottom: 1%;
+    color: #6F9BA8;
+    font-size: 0.9rem;
+}
+
+.speaker__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.speaker__logo a{
+    background-color: transparent;
+}
+
+.speaker__logo img{
+    width: 150px;
+}
+
+/* section show__more*/
+
+.show__more{
+    height: 90vh;
+}
+
+.show__more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url(../img/touch.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.show__more--btn{
+    height: 50px;
+    padding: 0 3% ;
+    background-color: #6F9BA8;
+    border: 1px solid #6F9BA8;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    outline: none;
+}
+
+.show__more--btn:active,
+.show__more--btn:hover{
+    background-color: rgb(70, 118, 133);
+    outline: #6F9BA8;
+}
+
+@media (max-width: 994px){
+    .speakers__container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    .speaker__profile{
+        width: 100%;
+        padding: 2% 0;    
+    }
+    
+    .speaker__profile--heading{
+        margin-top: 1%;
+        font-size: 1.2rem;
+
+    }
+
+    .speaker__logo {
+        display: none;
+    }
+    
+}
+
+ @media (max-width: 468px){
+    .sponsours__box{
+        width: 100%;
+    }
+
+    .show__more--btn{
+        width: 70%;
+    }
+    
+} 
+
+
+
+
+

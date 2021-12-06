@@ -1,0 +1,16 @@
+.footer__display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    background-color: #666;
+
+}
+
+.footer__link{
+    padding: 0 10% ;
+    background-color: #666;
+    text-decoration: none;
+    font-size: 0.7rem;
+
+}
